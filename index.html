@@ -1,0 +1,167 @@
+<!-- Dibuat oleh Nicholas Keandre 9K / 21 -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <title>UD Sekawan</title>
+  </head>
+
+  <body id="home" class="scrollspy">
+
+    <!-- Navbar -->
+    <div class="navbar-fixed">
+      <nav class="orange lighten-1">
+        <div class="container">
+          <div class="nav-wrapper">
+            <a href="#home" class="brand-logo">UD SEKAWAN</a>
+            <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="#product">Product</a></li>
+              <li><a href="#information">Information</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#about">About</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- End navbar -->
+
+    <!-- Sidenav -->
+    <ul class="sidenav" id="mobile-nav">
+      <li><a href="#product">Product</a></li>
+      <li><a href="#information">Information</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+    <!-- End sidenav -->
+
+    <!-- Jumbotron -->
+    <div class="jumbotron">
+      <img src="img/jumbotron.jpg" alt="UD Sekawan">
+    </div>
+    <!-- End jumbotron -->
+
+    <!-- Product -->
+    <section id="product" class="product scrollspy">
+      <div class="container">
+        <div class="row">
+          <h3 class="light center grey-text text-darken-3">Our Products</h3>
+          <div class="col m4 s12">
+            <div class="card-panel center">
+              <img src="img/product-1.jpg" alt="Our Product">
+              <h5>Holly Sabun Hijau Antiseptik</h5>
+              <button type="submit" class="btn orange lighten-1 center"><a href="https://wa.me/62817294225">Order Now!</a></button>
+            </div>
+          </div>
+          <div class="col m4 s12">
+            <div class="card-panel center">
+              <img src="img/product-2.jpg" alt="Our Product">
+              <h5>Holly Disinfectan 250ml</h5>
+              <button type="submit" class="btn orange lighten-1 center"><a href="https://wa.me/62817294225">Order Now!</a></button>
+            </div>
+          </div>
+          <div class="col m4 s12">
+            <div class="card-panel center">
+              <img src="img/product-3.jpg" alt="Our Product">
+              <h5>Holly Antiseptic Hand Soap 5lt</h5>
+              <button type="submit" class="btn orange lighten-1 center"><a href="https://wa.me/62817294225">Order Now!</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End product -->
+
+    <!-- Information -->
+    <section id="information" class="information scrollspy">
+      <div class="container">
+        <div class="row center">
+          <h3 class="light grey-text text-darken-3">Information</h3>
+          <h5 class="light grey-text text-darken-3">For more information, please <span class="click-here">click this button</span></h5>
+          <button type="submit" class="btn orange lighten-1 center"><a href="https://wa.me/62817294225">Click Here!</a></button>
+        </div>
+      </div>
+    </section>
+    <!-- End information -->
+
+    <!-- Gallery -->
+    <section id="gallery" class="gallery scrollspy">
+      <div class="container">
+        <div class="row">
+          <h3 class="light center grey-text text-darken-3">Gallery</h3>
+          <div class="col m6 s12">
+            <img src="img/gallery-1.jpg" alt="Gallery" class="responsive-img materialboxed">
+          </div>
+          <div class="col m6 s12">
+            <img src="img/gallery-2.jpg" alt="Gallery" class="responsive-img materialboxed">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col m6 s12">
+            <img src="img/gallery-3.jpg" alt="Gallery" class="responsive-img materialboxed">
+          </div>
+          <div class="col m6 s12">
+            <img src="img/gallery-4.jpg" alt="Gallery" class="responsive-img materialboxed">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Gallery -->
+
+    <!-- About -->
+    <section id="about" class="about scrollspy">
+      <div class="container">
+        <div class="row">
+          <h3 class="light center grey-text text-darken-3">About Us</h3>
+          <div class="col m5 s12 center">
+            <h4>UD Sekawan Semarang</h4>
+            <p>Kami adalah cabang dari UD Sekawan yang siap melayani Anda di daerah Jawa Tengah dan DIY</p>
+          </div>
+          <div class="col m7 s12 center">
+            <h4>Our Motto</h4>
+            <p class="motto">"Melayani yang terbaik dalam keadaan apapun"</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End about -->
+
+    <!-- Footer -->
+    <footer class="orange lighten-1 white-text center">
+      <p class="flow-text">2021 All Rights Reserved by UD Sekawan</p>
+    </footer>
+    <!-- End footer -->
+
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+
+    <!-- My script -->
+    <script>
+
+    // Sidenav
+    M.Sidenav.init(document.querySelectorAll('.sidenav'));
+
+    // Gallery 
+    M.Materialbox.init(document.querySelectorAll('.materialboxed'));
+
+    // Scrollspy
+    M.ScrollSpy.init(document.querySelectorAll('.scrollspy'), {
+      scrollOffset: 65
+    });
+
+    </script>
+  </body>
+</html>
